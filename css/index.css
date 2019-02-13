@@ -1,0 +1,823 @@
+.footer_box {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 0.49rem;
+  bottom: 0;
+  background-color: white;
+}
+.footer_box ul {
+  box-shadow: 0px -1px 0px #e9ebed;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+}
+.footer_box ul :nth-child(1) a:before {
+  background-image: url("../images/footImg/footIcon_11.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(2) a:before {
+  background-image: url("../images/footImg/footIcon_06r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(3) a:before {
+  background-image: url("../images/footImg/footIcon_08r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(4) a:before {
+  background-image: url("../images/footImg/footIcon_03r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul li {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  line-height: 0.8rem;
+  width: 25%;
+  height: 100%;
+}
+.footer_box ul li a {
+  font-size: 0.12rem;
+  display: block;
+}
+.infHead {
+  width: 100%;
+  height: 0.44rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.infHead .ingBack {
+  position: absolute;
+  width: 0.44rem;
+  height: 100%;
+  z-index: 99;
+  line-height: 0.44rem;
+  text-align: center;
+}
+.infHead .ingBack a {
+  display: block;
+}
+.infHead .ingBack a img {
+  width: 0.16rem;
+}
+.infHead .infTitle {
+  text-align: center;
+  line-height: 0.44rem;
+}
+.infHead .infTitle span {
+  font-size: 0.18rem;
+}
+.home_index {
+  background-color: #f3f2f2;
+  position: relative;
+}
+.home_index .home_title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 0.44rem;
+  overflow: hidden;
+  background-color: #fc5459;
+}
+.home_index .home_title .t_left {
+  position: relative;
+  height: 100%;
+  color: white;
+  width: 0.44rem;
+  display: inline-block;
+  float: left;
+  line-height: 0.65rem;
+  text-align: center;
+  font-size: 0.11rem;
+}
+.home_index .home_title .t_left a {
+  color: #ffffff;
+}
+.home_index .home_title .t_left a:before {
+  content: "";
+  background: url("../images/index_icon_03.png") no-repeat;
+  background-size: 0.2rem 0.16rem;
+  width: 0.2rem;
+  height: 0.16rem;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-top: -0.12rem;
+  margin-left: -0.1rem;
+}
+.home_index .home_title .t_center {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fc5459;
+  box-sizing: padding-box;
+}
+.home_index .home_title .t_center .inp {
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  margin-top: 0.055rem;
+  height: 0.32rem;
+  border-radius: 0.3rem;
+}
+.home_index .home_title .t_center .inp input {
+  border: 0;
+  font-size: 0.14rem;
+  margin-left: 0.15rem;
+  height: 100%;
+  width: 76%;
+  float: left;
+}
+.home_index .home_title .t_center .inp .in_btn {
+  text-align: center;
+  font-size: 0.15rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  line-height: 0.2rem;
+  background-color: gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.1rem;
+  margin-left: 0.1rem;
+  right: 0.2rem;
+}
+.home_index .home_title .t_center .inp .in_btn a {
+  color: white;
+  display: block;
+}
+.home_index .home_title .t_right {
+  position: relative;
+  color: white;
+  height: 100%;
+  width: 0.44rem;
+  display: inline-block;
+  float: right;
+  line-height: 0.65rem;
+  text-align: center;
+  font-size: 0.11rem;
+}
+.home_index .home_title .t_right a {
+  color: #ffffff;
+}
+.home_index .home_title .t_right a:before {
+  content: "";
+  background: url("../images/index_icon_05.png") no-repeat;
+  background-size: 0.2rem 0.16rem;
+  width: 0.2rem;
+  height: 0.16rem;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-top: -0.12rem;
+  margin-left: -0.1rem;
+}
+.home_index .viewPager_box {
+  margin: 0.45rem 0 0 0;
+  width: 100%;
+  height: 1.35rem;
+}
+.home_index .viewPager_box .banner {
+  height: 100%;
+}
+.home_index .viewPager_box .banner .swiper-wrapper .swiper-slide a .swiper-lazy {
+  width: 100%;
+  height: 100%;
+}
+.home_index .container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0.02rem;
+  margin-bottom: 0.49rem;
+}
+.home_index .container .column {
+  background-color: #fff;
+  margin-bottom: 0.05rem;
+}
+.home_index .container .column h2 {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.home_index .container .column h2 a {
+  display: block;
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+.home_index .container .column h2 .title {
+  color: #4a525d;
+  font-size: .16rem;
+  text-indent: .125rem;
+}
+.home_index .container .column h2 .more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .5rem;
+  font-size: .14rem;
+  color: #fe435d;
+  text-align: center;
+}
+.home_index .container .column dl {
+  overflow: hidden;
+}
+.home_index .container .column dl a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.home_index .container .column dl img {
+  width: 100%;
+  height: auto;
+}
+.home_index .container .column dl dt,
+.home_index .container .column dl dd {
+  float: left;
+  display: block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.home_index .container .column dl dd {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.home_index .container .column dl dd :last-child {
+  border-bottom: 0 none;
+}
+.home_index .container .ActivityList {
+  margin: 0.03rem auto;
+  width: 3.6rem;
+  height: 1rem;
+  background-color: #ffffff;
+}
+.home_index .container .ActivityList .commodity_img {
+  float: left;
+  background-color: blueviolet;
+  display: inline-block;
+  margin: 0.025rem;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.home_index .container .ActivityList .commodity_img img {
+  width: 100%;
+  height: 100%;
+}
+.home_index .container .ActivityList .commodity_content {
+  position: relative;
+  margin: 0.025rem auto;
+  float: left;
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.95rem;
+  background-color: white;
+}
+.home_index .container .ActivityList .commodity_content .goods_title {
+  font-size: 0.15rem;
+  width: 2.5rem;
+  height: 0.42rem;
+}
+.home_index .container .ActivityList .commodity_content .goods_title p {
+  text-indent: 0.16rem;
+}
+.home_index .container .ActivityList .commodity_content .goods_title :before {
+  content: "";
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../images/tm_09.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.03rem;
+  top: 0.03rem;
+  z-index: 99;
+}
+.home_index .container .ActivityList .commodity_content .currentPrice {
+  width: 100%;
+  height: 0.22rem;
+}
+.home_index .container .ActivityList .commodity_content .currentPrice p {
+  font-size: 0.14rem;
+  display: inline-block;
+  line-height: 0.22rem;
+  color: #adadad;
+}
+.home_index .container .ActivityList .commodity_content .currentPrice p span {
+  color: red;
+  margin-left: .3em;
+  font-size: 0.18rem;
+}
+.home_index .container .ActivityList .commodity_content .currentPrice > span {
+  color: #adadad;
+  font-size: 0.14rem;
+  text-decoration: line-through;
+}
+.home_index .container .ActivityList .commodity_content .workOff {
+  margin-top: 0.02rem;
+  width: 100%;
+  line-height: 0.25rem;
+  height: 0.25rem;
+}
+.home_index .container .ActivityList .commodity_content .workOff p {
+  font-size: 0.13rem;
+  color: #adadad;
+  display: inline-block;
+  float: left;
+}
+.home_index .container .ActivityList .commodity_content .workOff .ticket {
+  background-color: #fff;
+  float: right;
+  display: inline-block;
+  height: 0.25rem;
+}
+.home_index .container .ActivityList .commodity_content .workOff .ticket .ticket-price {
+  text-align: center;
+  font-size: 0.15rem;
+  float: left;
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.26rem;
+  border-top: 0.01rem solid #ff0000;
+  border-bottom: 0.01rem solid #ff0000;
+  border-left: 0.01rem solid #ff0000;
+  border-bottom-left-radius: 0.04rem;
+  border-top-left-radius: 0.04rem;
+  color: #ff0000;
+}
+.home_index .container .ActivityList .commodity_content .workOff .ticket .ticket-name {
+  font-size: 0.14rem;
+  text-align: center;
+  float: left;
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.26rem;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0), radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0);
+  background-color: #ff0000;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: -0.08rem 0.05rem, 0.32rem 0.05rem;
+  background-size: 0.16rem 0.16rem;
+}
+.i_goods_box {
+  margin-bottom: 0.45rem;
+}
+.i_goods_box .infHead {
+  width: 100%;
+  height: 0.44rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #ffffff;
+}
+.i_goods_box .infHead .ingBack {
+  position: absolute;
+  width: 0.44rem;
+  height: 100%;
+  z-index: 99;
+  line-height: 0.44rem;
+  text-align: center;
+}
+.i_goods_box .infHead .ingBack a {
+  display: block;
+}
+.i_goods_box .infHead .ingBack a img {
+  width: 0.16rem;
+}
+.i_goods_box .infHead .infTitle {
+  position: relative;
+  text-align: center;
+  line-height: 0.44rem;
+}
+.i_goods_box .infHead .infTitle span {
+  font-size: 0.18rem;
+}
+.i_goods_box .infHead .infTitle a {
+  position: absolute;
+  right: 0;
+  height: 0.44rem;
+  width: 0.44rem;
+}
+.i_goods_box .infHead .infTitle a i {
+  line-height: 0.44rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: #9d9d9d;
+}
+.i_goods_box .i_box {
+  margin-top: 0.44rem;
+  width: 100%;
+  height: 3.75rem;
+  clear: both;
+  position: relative;
+}
+.i_goods_box .i_box .i_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3.75rem;
+  background-color: #ffc0cb;
+}
+.i_goods_box .i_box .i_img img {
+  width: 100%;
+  height: 100%;
+}
+.i_goods_box .commodity_content {
+  padding: 0.1rem 8px;
+  width: 100%;
+  height: 1.2rem;
+  background-color: #ffffff;
+}
+.i_goods_box .commodity_content .goods_title {
+  margin-bottom: 0.02rem;
+  width: 100%;
+  height: 0.45rem;
+  overflow: hidden;
+  position: relative;
+}
+.i_goods_box .commodity_content .goods_title p {
+  font-size: 0.15rem;
+}
+.i_goods_box .commodity_content .currentPrice {
+  background-color: #fff;
+}
+.i_goods_box .commodity_content .currentPrice p {
+  margin-bottom: 0.06rem;
+  font-size: 0.15rem;
+  color: #fc5459;
+}
+.i_goods_box .commodity_content .currentPrice p span {
+  font-size: 0.14rem;
+  padding: 0 0.01rem;
+  border-radius: 0.03rem;
+  border: 0.02rem solid #fc5459;
+  margin-right: .5em;
+}
+.i_goods_box .commodity_content .currentPrice > span {
+  float: left;
+  width: 2rem;
+  display: inline-block;
+  color: #adadad;
+  margin: 0.01rem auto;
+  font-size: 0.14rem;
+}
+.i_goods_box .commodity_content .currentPrice > span > p {
+  margin: 0;
+  color: #adadad;
+  display: inline-block;
+  text-decoration: line-through;
+}
+.i_goods_box .commodity_content .workOff {
+  color: #adadad;
+  font-size: 0.14rem;
+  display: inline-block;
+  float: right;
+}
+.i_goods_box .commodity_content .workOff p {
+  text-align: right;
+  display: inline-block;
+}
+.i_goods_box .preferential {
+  width: 100%;
+  height: 0.45rem;
+  background-color: #f3f3f3;
+}
+.i_goods_box .preferential p {
+  text-indent: 1em;
+  font-size: 0.15rem;
+  line-height: 0.45rem;
+  color: #333;
+}
+.i_goods_box .preferential p span {
+  color: #fc5459;
+}
+.i_goods_box .preferential p a {
+  font-size: 0.14rem;
+  color: #adadad;
+}
+.i_goods_box .preferential p img {
+  height: 0.25rem;
+}
+.i_goods_box .similarity .column {
+  background-color: #fff;
+  margin-bottom: 0.05rem;
+}
+.i_goods_box .similarity .column h2 {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.i_goods_box .similarity .column h2 a {
+  display: block;
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+.i_goods_box .similarity .column h2 .title {
+  color: #4a525d;
+  font-size: .16rem;
+  text-indent: .125rem;
+}
+.i_goods_box .similarity .column h2 .more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .5rem;
+  font-size: .14rem;
+  color: #fe435d;
+  text-align: center;
+}
+.i_goods_box .similarity .column dl {
+  overflow: hidden;
+}
+.i_goods_box .similarity .column dl a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.i_goods_box .similarity .column dl img {
+  width: 100%;
+  height: auto;
+}
+.i_goods_box .similarity .column dl dt,
+.i_goods_box .similarity .column dl dd {
+  float: left;
+  display: block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.i_goods_box .similarity .column dl dd {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.i_goods_box .similarity .column dl dd :last-child {
+  border-bottom: 0 none;
+}
+.i_goods_box .similarity .i_ActivityList {
+  margin: 0.03rem auto;
+  width: 3.6rem;
+  height: 1rem;
+  background-color: #ffffff;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_img {
+  float: left;
+  background-color: blueviolet;
+  display: inline-block;
+  margin: 0.025rem;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_img img {
+  width: 100%;
+  height: 100%;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content {
+  position: relative;
+  margin: 0.025rem auto;
+  float: left;
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.95rem;
+  background-color: white;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_goods_title {
+  font-size: 0.15rem;
+  width: 2.5rem;
+  height: 0.42rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_goods_title p {
+  text-indent: 0.16rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_goods_title :before {
+  content: "";
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../images/tm_09.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.03rem;
+  top: 0.03rem;
+  z-index: 99;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_currentPrice {
+  width: 100%;
+  height: 0.22rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_currentPrice p {
+  font-size: 0.14rem;
+  display: inline-block;
+  line-height: 0.22rem;
+  color: #adadad;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_currentPrice p span {
+  color: red;
+  margin-left: .3em;
+  font-size: 0.18rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_currentPrice > span {
+  color: #adadad;
+  font-size: 0.14rem;
+  text-decoration: line-through;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_workOff {
+  margin-top: 0.02rem;
+  width: 100%;
+  line-height: 0.25rem;
+  height: 0.25rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_workOff p {
+  font-size: 0.13rem;
+  color: #adadad;
+  display: inline-block;
+  float: left;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_workOff .i_ticket {
+  background-color: #fff;
+  float: right;
+  display: inline-block;
+  height: 0.25rem;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_workOff .i_ticket .i_ticket-price {
+  text-align: center;
+  font-size: 0.15rem;
+  float: left;
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.26rem;
+  border-top: 0.01rem solid #ff0000;
+  border-bottom: 0.01rem solid #ff0000;
+  border-left: 0.01rem solid #ff0000;
+  border-bottom-left-radius: 0.04rem;
+  border-top-left-radius: 0.04rem;
+  color: #ff0000;
+}
+.i_goods_box .similarity .i_ActivityList .i_commodity_content .i_workOff .i_ticket .i_ticket-name {
+  font-size: 0.14rem;
+  text-align: center;
+  float: left;
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.26rem;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0), radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0);
+  background-color: #ff0000;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: -0.08rem 0.05rem, 0.32rem 0.05rem;
+  background-size: 0.16rem 0.16rem;
+}
+footer.i_footer {
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  height: 0.45rem;
+  width: 100%;
+  background-color: #fc5459;
+  text-align: center;
+}
+footer.i_footer a {
+  line-height: 0.45rem;
+  color: white;
+  font-size: 0.14rem;
+}
+.search_index {
+  background-color: #f3f2f2;
+  position: relative;
+}
+.search_index .search_title {
+  width: 100%;
+  height: 0.44rem;
+  overflow: hidden;
+  background-color: #fc5459;
+}
+.search_index .search_title .t_left {
+  position: relative;
+  height: 100%;
+  color: white;
+  width: 0.44rem;
+  display: inline-block;
+  float: left;
+  line-height: 0.65rem;
+  text-align: center;
+  font-size: 0.11rem;
+}
+.search_index .search_title .t_left a {
+  color: #ffffff;
+}
+.search_index .search_title .t_left a:before {
+  content: "";
+  background: url("../images/iBack_03 -w.png") no-repeat;
+  background-size: 0.16rem 0.11rem;
+  width: 0.16rem;
+  height: 0.11rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -0.055rem;
+  margin-left: -0.08rem;
+}
+.search_index .search_title .t_center {
+  width: 2.8rem;
+  height: 100%;
+  margin-left: 0.03rem;
+  float: left;
+  background-color: #fc5459;
+  display: inline-block;
+  box-sizing: padding-box;
+}
+.search_index .search_title .t_center .inp {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  margin-top: 0.055rem;
+  height: 0.32rem;
+  border-radius: 0.3rem;
+}
+.search_index .search_title .t_center .inp input {
+  border: 0;
+  font-size: 0.14rem;
+  margin-left: 0.15rem;
+  height: 100%;
+  width: 76%;
+  float: left;
+}
+.search_index .search_title .t_center .inp .in_btn {
+  text-align: center;
+  font-size: 0.15rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  line-height: 0.2rem;
+  background-color: gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.1rem;
+  margin-left: 0.1rem;
+  right: 0.2rem;
+}
+.search_index .search_title .t_center .inp .in_btn a {
+  color: white;
+  display: block;
+}
+.search_index .search_title .t_right {
+  position: relative;
+  color: white;
+  height: 100%;
+  width: 0.44rem;
+  display: inline-block;
+  float: right;
+  line-height: 0.44rem;
+  text-align: center;
+  font-size: 0.15rem;
+}
+.search_index .search_title .t_right a {
+  color: #ffffff;
+}
+.search_index .container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0.02rem;
+  margin-bottom: 0.49rem;
+  background-color: #fff;
+}

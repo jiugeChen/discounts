@@ -1,0 +1,176 @@
+<!--分类点击-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/assort.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel=" stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $(".loading").addClass("loader-chanage");
+            $(".loading").fadeOut(300)
+        })
+    </script>
+
+</head>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    </div>
+    <div class="Category_box">
+        <div class="goTop">
+
+        </div>
+        <div class="infHead">
+            <div class="ingBack">
+                <a href="assort.html">
+                    <img src="images/iBack_03.png"/>
+                </a>
+            </div>
+            <div class="infTitle"><span>鞋子</span></div>
+        </div>
+        <div class="he_class">
+            <ul>
+                <li class="active"><a href="#" >推荐</a></li>
+                <li><a href="#">最新</a></li>
+                <li><a href="#">销量</a></li>
+            </ul>
+        </div>
+        <div class="he_content">
+            <ul>
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="list_img"><img src="./images/sort/list_img.png" alt="图片"> </div>-->
+                        <!--<div class="list_title"><p>2018新款太阳镜偏光开车眼睛个太阳镜偏光开车眼睛个太阳镜偏光开车眼睛个性蛤眼睛个太阳镜偏光开车眼睛个性蛤蟆镜司机驾驶专用系列</p></div>-->
+                        <!--<div class="list_txt"><span>天猫</span><span>包邮</span>-->
+                            <!--<div class="ticket">-->
+                                <!--<div class="ticket-price">￥30</div><div class="ticket-name">券-->
+                            <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="list_price"><p>券后￥<span>19.00</span><span>￥49.00</span></p></div>-->
+                    <!--</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+<script>
+    $(function () {
+        //当页面超出去1000px的时候，让小火箭显示出来,如果小于1000，就让小火箭隐藏
+        $(window).scroll(function () {
+            if($(window).scrollTop() !=0 ){
+                $(".goTop").fadeIn(1000);
+            }else {
+                $(".goTop").fadeOut(1000);
+            }
+        });
+        //在外面注册
+        $(".goTop").click(function () {
+            $("html,body").stop().animate({scrollTop:0},500);
+            //scrollTop为0
+        });
+           // 控制三个li标签的选中状态
+        $(".he_class ul  li ").on('click',function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    });
+</script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            //判断卷去的高度超过topPart的高度
+            //1. 让navBar有固定定位
+            //2. 让mainPart有一个marginTop
+            if($(window).scrollTop() >= $(".infHead").height() ){
+                $(".he_class").addClass("fixed");
+                $(".main").css("marginTop", $(".he_class").height() + 10);
+            }else {
+                $(".he_class").removeClass("fixed");
+                $(".he_content").css("marginTop", 0);
+            }
+        });
+    });
+</script>
+<script src="js/jquery-lazyload.js"></script>
+
+<script>
+    $(function(){
+        let  goods ={};//商品
+        let  html =''; //创建一个空对象
+        //获取本地json
+        $.getJSON('json/json1.json', function (result) {
+            // 获取数据返回
+            goods = result.data.pageList;
+            // console.log(goods);
+            print();
+        });
+        // 创建方法
+         function print() {
+            // 遍历元素
+           $.each(goods,function (index,val) {
+               // 添加上页面上
+           html+= `
+<li><a href="${val.auctionUrl}">
+<div class="list_img"><img class="lazy"  data-original="${val.pictUrl }" alt="图片"></div>
+<div class="list_title"><p>${val.title}</p></div>
+<div class="list_txt"><span>天猫</span><span>包邮</span>
+<div class="ticket">
+<div class="ticket-price">￥${parseInt(val.couponAmount)}</div>
+<div class="ticket-name">券</div>
+</div></div>
+<div class="list_price">
+<p>券后￥<span> ${parseInt(val.zkPrice)-parseInt(val.couponAmount)}.00 </span><span>${parseInt(val.zkPrice)}.00</span></p>
+</div></a></li>   `
+           });
+             // 添加到 .he_content ul 上
+             $(".he_content ul").html(html);
+           // 图片懒加载
+             $("img.lazy").lazyload();
+         }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,325 @@
+.footer_box {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 0.49rem;
+  bottom: 0;
+  background-color: white;
+}
+.footer_box ul {
+  box-shadow: 0px -1px 0px #e9ebed;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+}
+.footer_box ul :nth-child(1) a:before {
+  background-image: url("../images/footImg/footIcon_11.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(2) a:before {
+  background-image: url("../images/footImg/footIcon_06r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(3) a:before {
+  background-image: url("../images/footImg/footIcon_08r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(4) a:before {
+  background-image: url("../images/footImg/footIcon_03r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul li {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  line-height: 0.8rem;
+  width: 25%;
+  height: 100%;
+}
+.footer_box ul li a {
+  font-size: 0.12rem;
+  display: block;
+}
+.infHead {
+  width: 100%;
+  height: 0.44rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.infHead .ingBack {
+  position: absolute;
+  width: 0.44rem;
+  height: 100%;
+  z-index: 99;
+  line-height: 0.44rem;
+  text-align: center;
+}
+.infHead .ingBack a {
+  display: block;
+}
+.infHead .ingBack a img {
+  width: 0.16rem;
+}
+.infHead .infTitle {
+  text-align: center;
+  line-height: 0.44rem;
+}
+.infHead .infTitle span {
+  font-size: 0.18rem;
+}
+.footer input {
+  margin: 0.2rem 0 0 0;
+  padding: 0;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.15rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  color: white !important;
+  background-color: #fc5459 !important;
+}
+.footer input span {
+  text-align: center;
+}
+.footer a {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.15rem;
+  color: white !important;
+  background-color: #fc5459 !important;
+  border-radius: 2rem;
+}
+.footer a.list-group-item:hover {
+  background-color: #fc5459 !important;
+}
+.login_box {
+  background-color: #fff;
+  min-height: 6.67rem;
+}
+.login_box .infHead {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0px 1px 3px #fafafa;
+}
+.login_box .img_box {
+  width: 100%;
+  height: 1.8rem;
+  background: url("../images/img_bg_03.png") no-repeat center;
+  background-size: 1.25rem;
+}
+.login_box .container {
+  margin-top: 0.14rem;
+  width: 100%;
+  height: 2.35rem;
+}
+.login_box .container .login_b {
+  padding: 0 0.2rem;
+  margin-bottom: 0.3rem;
+}
+.login_box .container .login_b :first-child div {
+  background: url("../images/login-username.png") no-repeat center;
+  background-size: 0.16rem 0.185rem;
+}
+.login_box .container .login_b :last-child div {
+  background: url("../images/login-password.png") no-repeat center;
+  background-size: 0.16rem 0.205rem;
+}
+.login_box .container .login_b .item {
+  width: 100%;
+  height: 0.4rem;
+  margin: 0.3rem auto;
+  padding: 0;
+  background-color: #fff;
+}
+.login_box .container .login_b .item div {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  float: left;
+}
+.login_box .container .login_b .item input {
+  font-size: 0.14rem;
+  float: left;
+  margin-left: 2em;
+  height: 100%;
+  width: 70%;
+  border: 0;
+  border-bottom: 1px solid #d4d7da;
+}
+.login_box .container .bottom_box {
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 0.25rem;
+}
+.login_box .container .bottom_box div {
+  display: inline-block;
+  line-height: 0.25rem;
+  font-size: 0.15rem;
+}
+.registered_box {
+  background-color: #fff;
+  min-height: 6.67rem;
+}
+.registered_box .infHead {
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0px 1px 3px #fafafa;
+}
+.registered_box .img_box {
+  width: 100%;
+  height: 1.8rem;
+  background: url("../images/img_bg_03.png") no-repeat center;
+  background-size: 1.25rem;
+}
+.registered_box .container {
+  margin-top: 0.14rem;
+  width: 100%;
+  height: 2.35rem;
+}
+.registered_box .container .login_b {
+  padding: 0 0.2rem;
+  margin-bottom: 0.3rem;
+}
+.registered_box .container .login_b .send {
+  position: absolute;
+  z-index: 66;
+  background: none !important;
+  border: 0.01rem solid #fc5459;
+  width: 0.9rem !important;
+  right: 0.3rem;
+  height: 0.3rem !important;
+  line-height: 0.3rem;
+  text-align: center;
+  top: 50%;
+  margin-top: -0.15rem;
+  font-size: 0.12rem;
+  color: #fc5459;
+  border-radius: 0.3rem;
+}
+.registered_box .container .login_b :first-child div {
+  background: url("../images/login-username.png") no-repeat center;
+  background-size: 0.16rem 0.185rem;
+}
+.registered_box .container .login_b :last-child div {
+  background: url("../images/login-password.png") no-repeat center;
+  background-size: 0.16rem 0.205rem;
+}
+.registered_box .container .login_b :nth-child(3) div {
+  background: url("../images/login-password.png") no-repeat center;
+  background-size: 0.16rem 0.205rem;
+}
+.registered_box .container .login_b :nth-child(2) div {
+  background: url("../images/yanzheng.png") no-repeat center;
+  background-size: 0.15rem 0.185rem;
+}
+.registered_box .container .login_b :nth-child(2) input {
+  width: 1rem !important;
+}
+.registered_box .container .login_b .item {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  margin: 0.2rem auto;
+  padding: 0;
+  background-color: #fff;
+}
+.registered_box .container .login_b .item div {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: inline-block;
+  float: left;
+}
+.registered_box .container .login_b .item input {
+  font-size: 0.14rem;
+  float: left;
+  margin-left: 2em;
+  height: 100%;
+  width: 70%;
+  border: 0;
+  border-bottom: 1px solid #d4d7da;
+}
+.registered_box .container .bottom_box {
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 0.25rem;
+}
+.registered_box .container .bottom_box div {
+  display: inline-block;
+  line-height: 0.25rem;
+  font-size: 0.15rem;
+}
+.retrievePassword .container ul {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+.retrievePassword .container ul li {
+  border: 1px solid #efeeee;
+  height: 0.6rem;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+.retrievePassword .container ul li select {
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  font-size: 0.16rem;
+  margin-left: 0.2rem;
+}
+.retrievePassword .container ul li span {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  font-size: 0.16rem;
+  line-height: 0.55rem;
+  padding-left: 0.2rem;
+}
+.retrievePassword .container ul li input {
+  box-shadow: none;
+  user-select: none;
+  float: left;
+  height: 100%;
+  font-size: 0.16rem;
+  width: 60%;
+  outline: none;
+  border: 0px;
+}

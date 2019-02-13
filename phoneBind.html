@@ -1,0 +1,76 @@
+<!--手机换绑定-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机换绑定</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+ #verify{
+     width: 1.2rem;
+     background-color: #fff;
+ }
+#verifyBox{
+    width: 1rem;
+    border: 1px solid #fc5459;
+    color: #fc5459;
+    height: 0.4rem;
+    margin-top: 0.1rem;
+}
+</style>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="informationBox">
+    <div class="infHead">
+        <div class="ingBack">
+            <a href="accountManagement.html">
+                <img src="images/iBack_03.png"/>
+            </a>
+        </div>
+        <div class="infTitle"><span>更换绑定</span></div>
+    </div>
+    <div class="container">
+        <ul class="list-group">
+<li class="list-group-item"><span>原手机号</span><input type="number" id="newPhone" class="form-control" placeholder="输入原手机号" ></li>
+<li class="list-group-item"><span>新手机号</span><input type="number" id="oldPhone" class="form-control" placeholder="输入新手机号"></li>
+<li class="list-group-item"><span>获取验证</span>
+    <input type="number" id="verify" class="form-control" placeholder="验证码">
+    <input class="btn btn-default" id="verifyBox" type="button" value="获取验证码">
+</li>
+        </ul>
+        <div class="footer">
+            <a href="#" id="save" class="list-group-item ">保存修改</a>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

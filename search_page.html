@@ -1,0 +1,130 @@
+<!--搜索-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel=" stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<style>
+    body{
+        background-color: #fff;
+    }
+     .sch-cont { margin-left: 0.2rem; font-size: .2rem; color: #666; }
+     .sch-cont .section { padding: 0.225rem 0 0.25rem; }
+     .sch-cont .tit { font-size: .16rem; }
+     .sch-cont .tit i { margin-right: .05rem; font-size: .15rem; color: #bfbfbf; }
+     .sch-cont .tags { overflow: hidden;
+         font-size: 0.15rem; }
+     .sch-cont .tag { float: left; margin: .165rem .05rem 0; padding: 0 .05rem; border-radius: .08rem; background-color: #f4f4f4;
+          }
+     .sch-cont .tag.actice { color: #ff395c; }
+     .sch-clear { padding-bottom: 0.15rem; text-align: center; font-size: .15rem; }
+     .sch-clear a { color: inherit; }
+     .sch-clear i { font-size: .15rem; color: #ff5f5f; }
+</style>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="search_index">
+    <div class="search_title">
+        <div class="t_left"><a href="#"></a></div>
+        <div class="t_center">
+            <div class="inp">
+                <input type="text"  placeholder="复制商品标题省钱买" value="">
+                <div class="in_btn"><a>&#10006</a></div>
+            </div>
+        </div>
+        <div class="t_right"><a href="#">搜索</a></div>
+    </div>
+    <div class="container">
+        <div class="scroll-wrap">
+        <div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);">
+            <div class="sch-cont">
+                <div class="section ui-border-b">
+                    <div class="tit"><i class="iconfont icon-hot"></i>热门搜索</div>
+                    <div class="tags">
+                        <span class="tag">外套</span><span class="tag">连衣裙</span><span class="tag">运动鞋</span><span class="tag">睡衣</span>
+                        <span class="tag actice">外套</span><span class="tag">连衣裙</span><span class="tag">运动鞋</span><span class="tag">睡衣</span>
+                        <span class="tag">外套</span><span class="tag actice">连衣裙</span><span class="tag">运动鞋</span>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="tit"><i class="iconfont icon-time"></i>最近搜索</div>
+                    <div class="tags">
+                        <span class="tag">外套</span><span class="tag">连衣裙</span><span class="tag">运动鞋</span><span class="tag">睡衣</span>
+                        <span class="tag">外套</span><span class="tag">连衣裙</span><span class="tag">运动鞋</span><span class="tag">睡衣</span>
+                        <span class="tag">外套</span><span class="tag">连衣裙</span><span class="tag">运动鞋</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sch-clear">
+                <a href="javascript:void(0)"><i class="iconfont icon-shanchu"></i>清除搜索历史</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        //轮播
+        $(function () {
+            var banner = new Swiper('.banner',{
+                autoplay: 5000,
+                pagination : '.swiper-pagination',
+                paginationClickable: true,
+                lazyLoading : true,
+                loop:true
+            });
+
+            $(".in_btn").click(function () {
+                console.log("9");
+                console.log($(".inp input:first").val(""));
+            })
+
+
+
+        })
+
+    </script>
+</div>
+
+<script>
+     $(function () {
+         console.log($(".search_index"));
+         $(".search_index").css({"display":"none"})
+
+    })
+</script>
+</body>
+</html>

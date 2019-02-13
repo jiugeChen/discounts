@@ -1,0 +1,386 @@
+<!--商品详情页-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    .modal-content{
+        position: fixed;
+        bottom:0;
+        width: 100%;
+        border: 0;
+    ;
+    }
+    .gb_resLay {
+        background: #FFFFFF;
+        height: auto;
+        width: 100%;
+        max-width:8rem;
+        margin: 0 auto;
+        padding: 0.1rem 0 0.2rem 0;
+    }
+    .gb_res_t {
+        line-height: 0.48rem;
+        height: 0.48rem;
+        position: relative;
+        font-size: 0.18rem;
+        text-align: center;
+    }
+
+    .gb_res_t i {
+        background: #FFEC94;
+        height: 1px;
+        overflow: hidden;
+        left: 0.32rem;
+        top: 0.23rem;
+        right: 0.32rem;
+        position: absolute;
+    }
+
+    .gb_res_t span {
+        background: #FFF;
+        display: inline-block;
+        padding: 0px 0.06rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .gb_resItms {
+        margin: 0px 4%;
+    }
+
+    .gb_resItms li {
+        text-align: center;
+        float: left;
+        width: 16.66%;
+        padding-bottom: 0.1rem;
+        font-size: 0.12rem;
+    }
+
+    .gb_resA img {
+        height: auto;
+        width: 0.6rem;
+        margin-bottom: 0.1rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+    .gb_resA img {
+        width: 45px;
+        margin-top: 5px;
+    }
+    }
+
+    @media only screen and (max-width: 470px) {
+        .gb_resItms li {
+            width: 33.333%;
+        }
+
+        .gb_resLay {
+            height: auto;
+        }
+
+        .gb_resA img {
+            width: 60px;
+            margin-top: 0
+        }
+    }
+
+    .bdsharebuttonbox a {
+        width: 0.6rem!important;
+        height: 0.6rem!important;
+        margin: 0 auto 1px!important;
+        float: none!important;
+        padding: 0!important;
+        display: block;
+    }
+
+    .bdsharebuttonbox a img {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .bdsharebuttonbox .bds_tsina {
+        background: url(images/share/gbRes_6.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bdsharebuttonbox .bds_qzone {
+        background: url(images/share/gbRes_4.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bdsharebuttonbox .bds_tqq {
+        background: url(images/share/gbRes_5.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bdsharebuttonbox .bds_weixin {
+        background: url(images/share/gbRes_2.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bdsharebuttonbox .bds_sqq {
+        background: url(images/share/gbRes_3.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bdsharebuttonbox .bds_renren {
+        background: url(images/share/gbRes_1.png) no-repeat center center/0.4rem 0.4rem;
+    }
+
+    .bd_weixin_popup .bd_weixin_popup_foot {
+        position: relative;
+        top: -0.12rem;
+    }
+
+
+    .default {
+        color: #999999;
+    }
+
+</style>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+   <div class="i_goods_box">
+       <div class="infHead">
+           <div class="ingBack">
+               <a href="index.html">
+                   <img src="images/iBack_03.png"/>
+               </a>
+           </div>
+           <div class="infTitle"><span>商品详情</span>
+               <a href="#" id="c_share"> <i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+       </div>
+       <div class="i_box">
+          <div class="i_img"><img src="images/goods_img_02.png"></div>
+       </div>
+
+       <div class="commodity_content">
+           <div class="goods_title"> <p>【浪莎】超薄网眼舒网眼舒适装装装网眼舒适装装网眼舒适装装装网适装装装适装装装</p></div>
+           <div class="currentPrice">
+               <p> <span> 券后价 </span> ￥444.00</p>
+               <span> 原价 <p>￥4444.00</p> </span>
+
+           </div>
+           <div class="workOff">
+               <p>已售出<span>10086</span>件</p>
+           </div>
+       </div>
+       <div class="preferential">
+          <p> <img src="images/preferential.svg"> 优惠券<span> 20</span><a href="#">(满59.90使用)</a></p>
+       </div>
+
+       <div class="similarity">
+           <div class="column">
+               <h2>
+                   <a class="title">相似商品</a>
+                   <a href="" class="more">其他</a>
+               </h2>
+
+           </div>
+           <div class="i_ActivityList">
+               <a href="#">
+                   <div class="i_commodity_img"><img src="images/commodity_img_03.jpg"></div>
+                   <div class="i_commodity_content">
+                       <div class="i_goods_title"> <p>【浪莎】超薄超薄超薄超薄超薄超薄超薄超薄超薄超薄装装</p></div>
+                       <div class="i_currentPrice"><p>券后价<span>44844.00</span></p> <span>￥598.00</span></div>
+                       <div class="i_workOff">
+                           <p>已售出<span>10086</span>件</p>
+
+                           <div class="i_ticket">
+                               <div class="i_ticket-price">￥186</div><div class="i_ticket-name">券
+                           </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <div class="i_ActivityList">
+               <a href="#">
+                   <div class="i_commodity_img"><img src="images/commodity_img_03.jpg"></div>
+                   <div class="i_commodity_content">
+                       <div class="i_goods_title"> <p>【浪莎】超薄超薄超薄超薄超薄超薄超薄超薄超薄超薄装装</p></div>
+                       <div class="i_currentPrice"><p>券后价<span>44844.00</span></p> <span>￥598.00</span></div>
+                       <div class="i_workOff">
+                           <p>已售出<span>10086</span>件</p>
+
+                           <div class="i_ticket">
+                               <div class="i_ticket-price">￥186</div><div class="i_ticket-name">券
+                           </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <div class="i_ActivityList">
+               <a href="#">
+                   <div class="i_commodity_img"><img src="images/commodity_img_03.jpg"></div>
+                   <div class="i_commodity_content">
+                       <div class="i_goods_title"> <p>【浪莎】超薄超薄超薄超薄超薄超薄超薄超薄超薄超薄装装</p></div>
+                       <div class="i_currentPrice"><p>券后价<span>44844.00</span></p> <span>￥598.00</span></div>
+                       <div class="i_workOff">
+                           <p>已售出<span>10086</span>件</p>
+
+                           <div class="i_ticket">
+                               <div class="i_ticket-price">￥186</div><div class="i_ticket-name">券
+                           </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <div class="i_ActivityList">
+               <a href="#">
+                   <div class="i_commodity_img"><img src="images/commodity_img_03.jpg"></div>
+                   <div class="i_commodity_content">
+                       <div class="i_goods_title"> <p>【浪莎】超薄超薄超薄超薄超薄超薄超薄超薄超薄超薄装装</p></div>
+                       <div class="i_currentPrice"><p>券后价<span>44844.00</span></p> <span>￥598.00</span></div>
+                       <div class="i_workOff">
+                           <p>已售出<span>10086</span>件</p>
+
+                           <div class="i_ticket">
+                               <div class="i_ticket-price">￥186</div><div class="i_ticket-name">券
+                           </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <div class="i_ActivityList">
+               <a href="#">
+                   <div class="i_commodity_img"><img src="images/commodity_img_03.jpg"></div>
+                   <div class="i_commodity_content">
+                       <div class="i_goods_title"> <p>【浪莎】超薄超薄超薄超薄超薄超薄超薄超薄超薄超薄装装</p></div>
+                       <div class="i_currentPrice"><p>券后价<span>44844.00</span></p> <span>￥598.00</span></div>
+                       <div class="i_workOff">
+                           <p>已售出<span>10086</span>件</p>
+
+                           <div class="i_ticket">
+                               <div class="i_ticket-price">￥186</div><div class="i_ticket-name">券
+                           </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </a>
+           </div>
+
+       </div>
+   </div>
+   <div id="myModal" class="modal ">
+       <!-- 弹窗内容 -->
+       <div class="modal-content ">
+           <div class="modal-header">
+               <span class="close"></span>
+           </div>
+           <div class="gb_resLay">
+               <div class="gb_res_t">
+                   <span>分享到</span>
+                   <i></i>
+               </div>
+               <div class="bdsharebuttonbox">
+                   <ul class="gb_resItms clearfix">
+                       <li>
+                           <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+                           微信好友
+                       </li>
+                       <li>
+                           <a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a>
+                           QQ好友
+                       </li>
+                       <li>
+                           <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+                           QQ空间
+                       </li>
+                       <li>
+                           <a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+                           腾讯微博
+                       </li>
+                       <li>
+                           <a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+                           新浪微博
+                       </li>
+                       <li>
+                           <a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+                           人人网
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+<footer class="i_footer">
+    <a href="#">立即购买</a>
+</footer>
+   <script type="text/javascript">
+
+       function closeCeng() {
+           document.getElementById('ceng').style.display = 'none';
+           document.getElementById('close').style.display = 'none';
+           return false;
+
+       }
+
+       // 获取弹窗
+       var modal = document.getElementById('myModal');
+
+       // 打开弹窗的按钮对象
+
+       var btn = document.getElementById("c_share");
+
+       // 获取 <span> 元素，用于关闭弹窗 that closes the modal
+       var span = document.getElementsByClassName("close")[0];
+
+       // 点击按钮打开弹窗
+       btn.onclick = function() {
+           modal.style.display = "block";
+       };
+
+       // 点击 <span> (x), 关闭弹窗
+       $("span.close").on('click',function () {
+
+       });
+       span.onclick = function() {
+           modal.style.display = "none";
+       };
+
+       // 在用户点击其他地方时，关闭弹窗
+       window.onclick = function(event) {
+           if (event.target == modal) {
+               modal.style.display = "none";
+
+           }
+       }
+
+
+   </script>
+</body>
+</html>

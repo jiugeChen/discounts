@@ -1,0 +1,689 @@
+.infHead {
+  width: 100%;
+  height: 0.44rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.infHead .ingBack {
+  position: absolute;
+  width: 0.44rem;
+  height: 100%;
+  z-index: 99;
+  line-height: 0.44rem;
+  text-align: center;
+}
+.infHead .ingBack a {
+  display: block;
+}
+.infHead .ingBack a img {
+  width: 0.16rem;
+}
+.infHead .infTitle {
+  text-align: center;
+  line-height: 0.44rem;
+}
+.infHead .infTitle span {
+  font-size: 0.18rem;
+}
+.footer input {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.15rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  color: white !important;
+  background-color: #fc5459 !important;
+}
+.footer input span {
+  text-align: center;
+}
+.footer a {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.15rem;
+  color: white !important;
+  background-color: #fc5459 !important;
+  border-radius: 2rem;
+}
+.footer a.list-group-item:hover {
+  background-color: #fc5459 !important;
+}
+.containerBox {
+  position: relative;
+  min-height: 6.67rem;
+  _height: 6.67rem;
+  background-color: #f8f8f8;
+}
+.containerBox .header {
+  margin: 0;
+  padding: 0;
+  height: 0.44rem;
+}
+.containerBox .header p {
+  line-height: 0.44rem;
+  font-size: 0.18rem;
+}
+.containerBox .container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.containerBox .container .headPortraitBox {
+  position: relative;
+  width: 100%;
+  height: 1.9rem;
+}
+.containerBox .container .headPortraitBox .headBgBox {
+  height: 1.46rem;
+  background: url("../images/headBg_02.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+.containerBox .container .headPortraitBox .headPortraitImg {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  margin-left: -0.5rem;
+  bottom: 0;
+  width: 1rem;
+  height: 1rem;
+  background: url("../images/head-portrait_03.png");
+  background-size: 100%;
+  display: inline-block;
+}
+.containerBox .container .personalData {
+  width: 100%;
+  height: 0.9rem;
+}
+.containerBox .container .personalData p {
+  text-align: center;
+  margin: 0;
+  padding: 8px 0 0 0;
+  font-size: 0.16rem;
+  font-weight: bold;
+}
+.containerBox .container .personalData .integral ul {
+  margin: 8px;
+  padding: 0;
+  text-align: center;
+}
+.containerBox .container .personalData .integral ul li {
+  display: inline-block;
+  font-size: 0.12rem;
+  margin: 0 5px;
+  padding: 1px 5px;
+  border: 1px solid #fc5459;
+  border-radius: 10%;
+}
+.containerBox .container .personalData .integral ul li a {
+  color: #fc5459;
+}
+.containerBox .container .personalData div span {
+  font-size: 0.14rem;
+}
+.containerBox .container .myList {
+  margin-bottom: 0.8rem;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.containerBox .container .myList :after {
+  content: "";
+  background-image: url("../images/go_03.png");
+  background-size: 100% 100%;
+  width: 0.05rem;
+  height: 0.1rem;
+  z-index: 100;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.05rem;
+  position: absolute;
+}
+.containerBox .container .myList .list-group-item {
+  border: 1px solid #efeeee;
+}
+.containerBox .container .myList :nth-child(1):before {
+  content: "";
+  background-image: url("../images/myIcon_00.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(2):before {
+  content: "";
+  background-image: url("../images/myIcon_01.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(3):before {
+  content: "";
+  background-image: url("../images/myIcon_03.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(4):before {
+  content: "";
+  background-image: url("../images/myIcon_06.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(5):before {
+  content: "";
+  background-image: url("../images/myIcon_10.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(6):before {
+  content: "";
+  background-image: url("../images/myIcon_13.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList :nth-child(7):before {
+  content: "";
+  background-image: url("../images/myIcon_17.png");
+  background-repeat: no-repeat;
+  background-size: 0.25rem 0.25rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 0.2rem;
+  top: 0.1rem;
+  position: absolute;
+}
+.containerBox .container .myList .list-group-item {
+  font-size: 0.15rem;
+  height: 0.48rem !important;
+  overflow: hidden;
+  margin: 0 0 -1px 0;
+  padding: 0 0 0 1rem;
+  line-height: 0.48rem;
+}
+.containerBox .footer_box {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 0.49rem;
+  bottom: 0;
+  background-color: white;
+}
+.containerBox .footer_box ul {
+  box-shadow: 0px -1px 0px #e9ebed;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+}
+.containerBox .footer_box ul :nth-child(1) a:before {
+  background-image: url("../images/footImg/footIcon_11r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.containerBox .footer_box ul :nth-child(2) a:before {
+  background-image: url("../images/footImg/footIcon_06r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.containerBox .footer_box ul :nth-child(3) a:before {
+  background-image: url("../images/footImg/footIcon_08r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.containerBox .footer_box ul :nth-child(4) a:before {
+  background-image: url("../images/footImg/footIcon_03.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.containerBox .footer_box ul li {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  line-height: 0.8rem;
+  width: 25%;
+  height: 100%;
+}
+.containerBox .footer_box ul li a {
+  font-size: 0.12rem;
+  display: block;
+}
+.informationBox .container ul {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+.informationBox .container ul li {
+  border: 1px solid #efeeee;
+  height: 0.6rem;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+.informationBox .container ul li select {
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  font-size: 0.16rem;
+  margin-left: 0.2rem;
+}
+.informationBox .container ul li span {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  font-size: 0.16rem;
+  line-height: 0.55rem;
+  padding-left: 0.2rem;
+}
+.informationBox .container ul li input {
+  box-shadow: none;
+  user-select: none;
+  float: left;
+  height: 100%;
+  font-size: 0.16rem;
+  width: 60%;
+  outline: none;
+  border: 0px;
+}
+.accountMan .container .myList {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+.accountMan .container .myList :after {
+  content: "";
+  background-image: url("../images/go_03.png");
+  background-size: 100% 100%;
+  width: 0.05rem;
+  height: 0.1rem;
+  z-index: 100;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.05rem;
+  position: absolute;
+}
+.accountMan .container .myList .list-group-item {
+  border: 1px solid #efeeee;
+  font-size: 0.15rem;
+  height: 0.48rem !important;
+  overflow: hidden;
+  margin: 0 0 -1px 0;
+  padding: 0 0 0 0.2rem;
+  line-height: 0.48rem;
+}
+.settingBox .container .myList {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+.settingBox .container .myList a:first-child:after {
+  content: "";
+  background-image: none;
+}
+.settingBox .container .myList :after {
+  content: "";
+  background-image: url("../images/go_03.png");
+  background-size: 100% 100%;
+  width: 0.05rem;
+  height: 0.1rem;
+  z-index: 100;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.05rem;
+  position: absolute;
+}
+.settingBox .container .myList .list-group-item {
+  border: 1px solid #efeeee;
+  font-size: 0.15rem;
+  height: 0.48rem !important;
+  overflow: hidden;
+  margin: 0 0 -1px 0;
+  padding: 0 0 0 0.2rem;
+  line-height: 0.48rem;
+}
+.integralBox .head_f {
+  margin-top: 0.2rem;
+  background-color: #ffffff;
+  width: 100%;
+  height: 1rem;
+}
+.integralBox .head_f .f_container {
+  margin: 0 auto;
+  height: 100%;
+  width: 3rem;
+}
+.integralBox .head_f .f_container .left_img_box {
+  float: left;
+  display: inline-block;
+  background: url("../images/integral_03.png") no-repeat 50%;
+  background-size: 0.4rem;
+  width: 30%;
+  height: 100%;
+}
+.integralBox .head_f .f_container .right_box {
+  float: left;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  padding-top: 0.2rem;
+}
+.integralBox .head_f .f_container .right_box P {
+  font-size: 0.16rem;
+  color: black;
+  margin-bottom: 0.05rem;
+}
+.integralBox .head_f .f_container .right_box a {
+  font-size: 0.16rem;
+}
+.integralBox .head_f .f_container .right_box span {
+  font-size: 0.13rem;
+  color: red;
+}
+.integralBox .integral {
+  overflow: hidden;
+  margin-top: 0.3rem;
+  width: 100%;
+}
+.integralBox .integral :nth-child(1) a:before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_03.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral :nth-child(2) a:before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_06.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral :nth-child(3) a:before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_09.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral :nth-child(4) a:before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_18.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral :nth-child(5) a:before {
+  margin-top: -0.25rem !important;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_21.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral :nth-child(6) a:before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/i_in_15.png");
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.2rem;
+  margin-top: -0.3rem;
+  background-repeat: no-repeat;
+}
+.integralBox .integral .in-item {
+  background-color: white;
+  border: 2px solid #f8f9fc;
+  float: left;
+  text-align: center;
+  width: 33%;
+  height: 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+.integralBox .integral .in-item a {
+  display: block;
+  padding-top: 0.8rem;
+  font-size: 0.14rem;
+}
+.idea_box .container {
+  margin-top: 0.4rem;
+}
+.idea_box .container .character {
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+}
+.idea_box .container .character textarea {
+  position: relative;
+  box-shadow: 0 0 0 transparent;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 0.15rem;
+  text-indent: 1em;
+  line-height: 1.5em;
+}
+.Integral_box .container ul {
+  margin: 0.3rem 0 0 0;
+  padding: 0;
+}
+.Integral_box .container ul li {
+  border: 1px solid #efeeee;
+  height: 0.6rem;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+.Integral_box .container ul li select {
+  border: 0px;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  font-size: 0.16rem;
+  margin-left: 0.2rem;
+}
+.Integral_box .container ul li span {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  font-size: 0.16rem;
+  line-height: 0.55rem;
+  padding-left: 0.2rem;
+}
+.Integral_box .container ul li input {
+  box-shadow: none;
+  user-select: none;
+  float: left;
+  height: 100%;
+  font-size: 0.16rem;
+  width: 60%;
+  outline: none;
+  border: 0px;
+}
+.details_box .container ul {
+  margin-top: 0.2rem;
+}
+.details_box .container ul li {
+  position: relative;
+  margin-top: 0.02rem;
+  border-radius: 5px;
+  height: 0.6rem;
+  background-color: #ffffff;
+  border: 1px solid #efeeee;
+}
+.details_box .container ul li h4 {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  font-size: 0.16rem;
+}
+.details_box .container ul li p {
+  position: absolute;
+  bottom: 0.02rem;
+  left: 0.1rem;
+  font-size: 0.14rem;
+  color: #8c8c8c;
+}
+.details_box .container ul li span {
+  position: absolute;
+  right: 0.1rem;
+  color: red;
+  line-height: 0.6rem;
+  font-size: 0.14rem;
+}
+.Withdrawal_box .container ul {
+  margin-top: 0.2rem;
+}
+.Withdrawal_box .container ul li {
+  position: relative;
+  margin-top: 0.03rem;
+  border-radius: 5px;
+  height: 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid #efeeee;
+}
+.Withdrawal_box .container ul li h4 {
+  position: absolute;
+  top: 0.05rem;
+  left: 0.1rem;
+  font-size: 0.16rem;
+}
+.Withdrawal_box .container ul li p {
+  position: absolute;
+  bottom: 0.04rem;
+  left: 0.1rem;
+  font-size: 0.14rem;
+}
+.Withdrawal_box .container ul li p i {
+  color: #9d9d9d;
+}
+.Withdrawal_box .container ul li .orderNumber {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.1rem;
+  font-size: 0.14rem;
+  color: black;
+}
+.Withdrawal_box .container ul li span {
+  position: absolute;
+  left: 0.1rem;
+  color: black;
+  line-height: 0.9rem;
+  font-size: 0.14rem;
+}
+.Withdrawal_box .container ul li div {
+  position: absolute;
+  right: 0;
+  width: 1rem;
+  height: 100%;
+  line-height: 1.2rem;
+}
+.Withdrawal_box .container ul li div p {
+  font-size: 0.16rem;
+  color: red;
+  margin: 0;
+  padding: 0;
+}

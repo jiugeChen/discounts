@@ -1,0 +1,63 @@
+<!--提现状态-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提现状态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="Withdrawal_box">
+    <div class="infHead">
+        <div class="ingBack">
+            <a href="pointManagement.html">
+                <img src="images/iBack_03.png"/>
+            </a>
+        </div>
+        <div class="infTitle"><span>提现状态</span></div>
+    </div>
+    <div class="container">
+        <ul>
+            <li><h4 class="list-group-item-heading">提现100.00元</h4>
+                <p class="list-group-item-text time">时间: <i>2018-12-08 15:30:33</i> </p>
+                <p class="orderNumber">订单号:201845655555</p>
+                <span>状态: <i class="green ">已完成</i></span>
+                <div><p>- 200.00</p></div>
+            </li>            <li><h4 class="list-group-item-heading">提现100.00元</h4>
+                <p class="list-group-item-text time">时间: <i>2018-12-08 15:30:33</i></p>
+                <p class="orderNumber">订单号:201845655555</p>
+                <span>状态: <i   class="red ">失败</i></span>
+                <div><p>- 200.00</p></div>
+            </li>
+
+
+            <!--<li></li>-->
+        </ul>
+    </div>
+</div>
+</body>
+</html>

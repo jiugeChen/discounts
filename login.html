@@ -1,0 +1,65 @@
+<!--登录-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/loginAndRegistered.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel=" stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+  <div class="login_box">
+      <div class="infHead">
+          <div class="ingBack">
+              <a href="index.html">
+                  <img src="images/iBack_03.png"/>
+              </a>
+          </div>
+          <div class="infTitle"><span>登录</span></div>
+      </div>
+      <div class="img_box"></div>
+      <div class="container">
+                <div class="login_b">
+                          <div class="item"><div></div><input type="number" placeholder="请输入你的账号">  </div>
+                          <div class="item"><div></div><input type="password" placeholder="请输入你的密码"></div>
+                </div>
+
+          <div class="footer">
+              <input class="btn btn-default" type="submit" value="登录">
+          </div>
+          <div class="bottom_box">
+              <div class="b_left floatLeft"><a href="registered.html">账户注册</a></div>
+              <div class="b_right floatRight"><a href="retrievePassword%20.html">找回密码</a></div>
+          </div>
+      </div>
+
+  </div>
+</body>
+</html>

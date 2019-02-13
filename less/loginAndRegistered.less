@@ -1,0 +1,428 @@
+@fz: font-size;
+@6a: #6a6a6a;
+@fc: #fc5459;
+.fz(@size) {
+  font-size: @size;
+}
+
+.fontWeight() {
+  font-weight: bold;
+}
+
+.bgRed() {
+  background-color: red;
+}
+
+.marginPadding(@margin;@padding) {
+  margin: @margin;
+  padding: @padding;
+}
+
+.bgc(@bg) {
+  background-color: @bg;
+}
+
+;
+.wh(@w;@h) {
+  width: @w;
+  height: @h;
+}
+
+.w(@w) {
+  width: @w;
+}
+
+.h(@h) {
+  height: @h;
+}
+
+.bd(@size;@color) {
+  border: @size solid @color
+}
+
+;
+.bor-radius(@size) {
+  border-radius: @size;
+}
+
+.posA() {
+  position: absolute;
+}
+
+.posR() {
+  position: relative;
+}
+
+.center(text-x) {
+  text-align: center;
+}
+
+.center(text-y) {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.min-width(@min-w) {
+  min-width: @min-w;
+  _width: @min-w;
+}
+
+.min-height(@min-h) {
+  min-height: @min-h;
+  _height: @min-h;
+}
+
+.footBef() {
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+}
+
+//公用
+.footer_box {
+  z-index: 999;
+  position: fixed;
+  .w(100%);
+  .h(0.49rem);
+  bottom: 0;
+  background-color: white;
+  ul {
+    box-shadow: 0px -1px 0px #e9ebed;
+
+    .bgc(white);
+    display: flex;
+    .h(100%);
+
+    :nth-child(1) a:before {
+      background-image: url("../images/footImg/footIcon_11.png");
+      .footBef();
+      .posA;
+    }
+  ;
+    :nth-child(2) a:before {
+      background-image: url("../images/footImg/footIcon_06r.png");
+      .footBef();
+      .posA;
+    }
+  ;
+    :nth-child(3) a:before {
+      background-image: url("../images/footImg/footIcon_08r.png");
+      .footBef();
+      .posA;
+    }
+  ;
+    :nth-child(4) a:before {
+      background-image: url("../images/footImg/footIcon_03r.png");
+      .footBef();
+      .posA;
+    }
+  ;
+
+    li {
+      .posR;
+      .center(text-x);
+      flex: 1;
+      line-height: 0.8rem;
+      .wh(25%; 100%);
+      a {
+
+        .fz(0.12rem);
+        display: block;
+      }
+    }
+  }
+}
+
+.infHead {
+  .wh(100%; 0.44rem);
+  .posR;
+  .bgc(white);
+  .ingBack {
+    .posA;
+    .wh(0.44rem; 100%);
+    //.bgc(#Ccc);
+    z-index: 99;
+    line-height: 0.44rem;
+    .center(text-x);
+    a {
+      display: block;
+      img {
+        width: 0.16rem;
+      }
+
+    }
+
+  }
+
+  .infTitle {
+    text-align: center;
+    line-height: 0.44rem;
+    span {
+      .fz(0.18rem);
+    }
+  }
+}
+.footer{
+  input{
+    .marginPadding(0.2rem 0 0 0;0);
+    .h(0.4rem);
+    text-align: center;
+    line-height: 0.4rem;
+    .fz(0.15rem);
+    width: 100%;
+    border:0;
+    outline: none;
+    //filter:chroma(color=#000000);
+    color: white !important;
+    .bgc(#fc5459) !important;
+    //border-radius:2rem;
+    span{
+      text-align: center;
+    }
+  }
+  a{
+    .marginPadding(0.5rem 0 0 0;0);
+    .h(0.4rem);
+    text-align: center;
+    line-height: 0.4rem;
+    .fz(0.15rem);
+    color: white !important;
+    .bgc(#fc5459) !important;
+    border-radius:2rem;
+
+  }
+  a.list-group-item:hover{
+    //color: white !important;
+    .bgc(#fc5459) !important;
+  }
+}
+
+//登录
+.login_box{
+  .infHead {
+    border-bottom: 1px solid #fafafa;
+    box-shadow: 0px 1px 3px #fafafa;
+  }
+  background-color: #fff;
+  min-height: 6.67rem;
+  .img_box{
+  .wh(100%;1.8rem);
+    background: url("../images/img_bg_03.png") no-repeat center;
+    background-size: 1.25rem;
+    //.bgc(pink);
+  }
+  .container{
+    margin-top: 0.14rem;
+    .wh(100%;2.35rem);
+    //background-color: pink;
+.login_b{
+  padding: 0 0.2rem;
+  margin-bottom:0.3rem;
+  :first-child div{
+    background: url("../images/login-username.png") no-repeat center;
+    background-size: 0.16rem 0.185rem;
+  }:last-child div{
+    background: url("../images/login-password.png") no-repeat center;
+    background-size: 0.16rem 0.205rem;
+  }
+  .item{
+  div{
+    .wh(0.4rem;0.4rem);
+    //background-color: red;
+    display: inline-block;
+    float: left;
+  }
+
+    .wh(100%;0.4rem);
+    .marginPadding(0.3rem auto;0);
+    background-color: #fff;
+   input{
+     font-size: 0.14rem;
+     float: left;
+      margin-left: 2em;
+      height:100%;
+      width: 70%;
+      border: 0;
+     border-bottom: 1px solid #d4d7da;
+
+    }
+  }
+}
+    .bottom_box{
+      margin-top: 0.3rem;
+      .wh(100%;0.25rem);
+      div{
+        display: inline-block;
+        line-height: 0.25rem;
+        font-size: 0.15rem;
+      }
+    }
+  }
+}
+//注册
+.registered_box{
+  .infHead {
+    border-bottom: 1px solid #fafafa;
+    box-shadow: 0px 1px 3px #fafafa;
+  }
+  background-color: #fff;
+  min-height: 6.67rem;
+  .img_box{
+    .wh(100%;1.8rem);
+    background: url("../images/img_bg_03.png") no-repeat center;
+    background-size: 1.25rem;
+    //.bgc(pink);
+  }
+  .container{
+    margin-top: 0.14rem;
+    .wh(100%;2.35rem);
+    //background-color: pink;
+    .login_b{
+      .send{
+        position: absolute;
+        z-index: 66;
+        background:none !important;
+        border: 0.01rem solid #fc5459;
+        width: 0.9rem !important;
+        right: 0.3rem;
+        height: 0.3rem !important;
+        line-height: 0.3rem;
+        text-align: center;
+        top: 50%;
+        margin-top: -0.15rem;
+        font-size: 0.12rem;
+        color: #fc5459;
+        border-radius: 0.3rem;
+      }
+
+      padding: 0 0.2rem;
+      margin-bottom:0.3rem;
+      :first-child div{
+        background: url("../images/login-username.png") no-repeat center;
+        background-size: 0.16rem 0.185rem;
+      }
+      :last-child div{
+         background: url("../images/login-password.png") no-repeat center;
+         background-size: 0.16rem 0.205rem;
+       }
+      :nth-child(3) div{
+         background: url("../images/login-password.png") no-repeat center;
+         background-size: 0.16rem 0.205rem;
+       } :nth-child(2) div{
+         background: url("../images/yanzheng.png") no-repeat center;
+         background-size: 0.15rem 0.185rem;
+       }
+      :nth-child(2) input{
+        width: 1rem !important;
+      }
+      .item{
+        position: relative;
+        div{
+          .wh(0.4rem;0.4rem);
+          //background-color: red;
+          display: inline-block;
+          float: left;
+        }
+
+        .wh(100%;0.4rem);
+        .marginPadding(0.2rem auto;0);
+        background-color: #fff;
+        input{
+          font-size: 0.14rem;
+          float: left;
+          margin-left: 2em;
+          height:100%;
+          width: 70%;
+          border: 0;
+          border-bottom: 1px solid #d4d7da;
+
+        }
+      }
+    }
+    .bottom_box{
+      margin-top: 0.3rem;
+      .wh(100%;0.25rem);
+      div{
+        display: inline-block;
+        line-height: 0.25rem;
+        font-size: 0.15rem;
+      }
+    }
+  }
+}
+//找回密码
+.retrievePassword{
+  .container{
+    ul{
+      .marginPadding(0.3rem 0 0 0;0);
+
+      li{
+        .bd(1px;#efeeee);
+        select{
+          border: 0px;
+          text-align: center;
+          .h(100%);
+          .w(30%);
+          .fz(0.16rem);
+          margin-left: 0.2rem;
+        }
+        .h(0.6rem);
+        .marginPadding(0 0 -1px 0;0);
+        span{width: 30%;display: inline-block; float: left;.fz(0.16rem);
+          line-height:0.55rem;
+          padding-left: 0.2rem;
+        };
+        input{
+          box-shadow: none;
+          user-select: none;
+          float: left;
+          height: 100%;
+          .fz(0.16rem);
+          width: 60%;
+          outline: none;
+          border: 0px;
+
+
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

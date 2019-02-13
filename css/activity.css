@@ -1,0 +1,268 @@
+.footer_box {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 0.49rem;
+  bottom: 0;
+  background-color: white;
+}
+.footer_box ul {
+  box-shadow: 0px -1px 0px #e9ebed;
+  background-color: #ffffff;
+  display: flex;
+  height: 100%;
+}
+.footer_box ul :nth-child(1) a:before {
+  background-image: url("../images/footImg/footIcon_11r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(2) a:before {
+  background-image: url("../images/footImg/footIcon_06r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(3) a:before {
+  background-image: url("../images/footImg/footIcon_08.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul :nth-child(4) a:before {
+  background-image: url("../images/footImg/footIcon_03r.png");
+  content: "";
+  background-size: 0.25rem 0.25rem;
+  background-repeat: repeat;
+  width: 0.25rem;
+  height: 0.25rem;
+  z-index: 100;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0.05rem;
+  position: absolute;
+}
+.footer_box ul li {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  line-height: 0.8rem;
+  width: 25%;
+  height: 100%;
+}
+.footer_box ul li a {
+  font-size: 0.12rem;
+  display: block;
+}
+.activity_box {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #ffc0cb;
+}
+.activity_box .viewPager_box {
+  width: 100%;
+  height: 1.5rem;
+}
+.activity_box .viewPager_box .banner {
+  height: 100%;
+}
+.activity_box .viewPager_box .banner .swiper-wrapper .swiper-slide a .swiper-lazy {
+  width: 100%;
+  height: 100%;
+}
+.activity_box .container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0.02rem;
+  margin-bottom: 0.49rem;
+}
+.activity_box .container .column {
+  background-color: #fff;
+  margin-bottom: 0.05rem;
+}
+.activity_box .container .column h2 {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.activity_box .container .column h2 a {
+  display: block;
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+.activity_box .container .column h2 .title {
+  color: #4a525d;
+  font-size: .16rem;
+  text-indent: .125rem;
+}
+.activity_box .container .column h2 .more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .5rem;
+  font-size: .14rem;
+  color: #fe435d;
+  text-align: center;
+}
+.activity_box .container .column dl {
+  overflow: hidden;
+}
+.activity_box .container .column dl a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.activity_box .container .column dl img {
+  width: 100%;
+  height: auto;
+}
+.activity_box .container .column dl dt,
+.activity_box .container .column dl dd {
+  float: left;
+  display: block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.activity_box .container .column dl dd {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.activity_box .container .column dl dd :last-child {
+  border-bottom: 0 none;
+}
+.activity_box .container .ActivityList {
+  margin: 0.03rem auto;
+  width: 3.6rem;
+  height: 1rem;
+  background-color: #ffffff;
+}
+.activity_box .container .ActivityList .commodity_img {
+  float: left;
+  background-color: blueviolet;
+  display: inline-block;
+  margin: 0.025rem;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.activity_box .container .ActivityList .commodity_img img {
+  width: 100%;
+  height: 100%;
+}
+.activity_box .container .ActivityList .commodity_content {
+  position: relative;
+  margin: 0.025rem auto;
+  float: left;
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.95rem;
+  background-color: white;
+}
+.activity_box .container .ActivityList .commodity_content .goods_title {
+  font-size: 0.15rem;
+  width: 2.5rem;
+  height: 0.42rem;
+}
+.activity_box .container .ActivityList .commodity_content .goods_title p {
+  text-indent: 0.16rem;
+}
+.activity_box .container .ActivityList .commodity_content .goods_title :before {
+  content: "";
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url("../images/tm_09.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.03rem;
+  top: 0.03rem;
+  z-index: 99;
+}
+.activity_box .container .ActivityList .commodity_content .currentPrice {
+  width: 100%;
+  height: 0.22rem;
+}
+.activity_box .container .ActivityList .commodity_content .currentPrice p {
+  font-size: 0.14rem;
+  display: inline-block;
+  line-height: 0.22rem;
+  color: #adadad;
+}
+.activity_box .container .ActivityList .commodity_content .currentPrice p span {
+  color: red;
+  margin-left: .3em;
+  font-size: 0.18rem;
+}
+.activity_box .container .ActivityList .commodity_content .currentPrice > span {
+  color: #adadad;
+  font-size: 0.14rem;
+  text-decoration: line-through;
+}
+.activity_box .container .ActivityList .commodity_content .workOff {
+  margin-top: 0.02rem;
+  width: 100%;
+  line-height: 0.25rem;
+  height: 0.25rem;
+}
+.activity_box .container .ActivityList .commodity_content .workOff p {
+  font-size: 0.13rem;
+  color: #adadad;
+  display: inline-block;
+  float: left;
+}
+.activity_box .container .ActivityList .commodity_content .workOff .ticket {
+  background-color: #fff;
+  float: right;
+  display: inline-block;
+  height: 0.25rem;
+}
+.activity_box .container .ActivityList .commodity_content .workOff .ticket .ticket-price {
+  text-align: center;
+  font-size: 0.15rem;
+  float: left;
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.26rem;
+  border-top: 0.01rem solid #ff0000;
+  border-bottom: 0.01rem solid #ff0000;
+  border-left: 0.01rem solid #ff0000;
+  border-bottom-left-radius: 0.04rem;
+  border-top-left-radius: 0.04rem;
+  color: #ff0000;
+}
+.activity_box .container .ActivityList .commodity_content .workOff .ticket .ticket-name {
+  font-size: 0.14rem;
+  text-align: center;
+  float: left;
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.26rem;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0), radial-gradient(circle at 50% 50%, #ffffff 0, #ffffff 50%, transparent 0);
+  background-color: #ff0000;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: -0.08rem 0.05rem, 0.32rem 0.05rem;
+  background-size: 0.16rem 0.16rem;
+}

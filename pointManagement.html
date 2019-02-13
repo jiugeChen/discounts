@@ -1,0 +1,66 @@
+<!--积分管理-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+ <div class="integralBox">
+     <div class="infHead">
+         <div class="ingBack">
+             <a href="personalCenter.html">
+                 <img src="images/iBack_03.png"/>
+             </a>
+         </div>
+         <div class="infTitle"><span>积分管理</span></div>
+     </div>
+     <div class="head_f">
+          <div class="f_container">
+                    <div class="left_img_box"></div>
+                    <div class="right_box">
+                        <p>我的积分:<i style="color: red">100000000</i>分</p>
+                        <p>可 提 现: <i style="color: red">1000000.00</i>元</p>
+                        <span>注:100积分=1RMB</span>
+                    </div>
+          </div>
+     </div>
+     <div class="integral">
+             <div class="in-item"><a href="IntegralWithdrawal.html">积分提现</a></div>
+             <div class="in-item" style=" margin-left: -1px;"><a href="IntegralDetails.html">积分明细</a></div>
+             <div class="in-item" style=" margin-left: -1px;"><a href="WithdrawalState.html">提现状态</a></div>
+             <div class="in-item" style=" margin-top:  -1px;"><a href="#">关于积分</a></div>
+             <div class="in-item" style=" margin-left: -1px; margin-top: -1px"><a href="bindBank.html">绑定银行卡</a></div>
+             <div class="in-item" style=" margin-left: -1px; margin-top: -1px"><a href="#">联系我们</a></div>
+     </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--绑定银行卡-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="informationBox">
+    <div class="infHead">
+        <div class="ingBack">
+            <a href="pointManagement.html">
+                <img src="images/iBack_03.png"/>
+            </a>
+        </div>
+        <div class="infTitle"><span>银行卡绑定</span></div>
+    </div>
+   <div class="container">
+       <ul class="list-group">
+           <li class="list-group-item"><span>真实姓名</span><input type="text" id="userName" class="form-control" placeholder="输入真实姓名" ></li>
+           <li class="list-group-item"><span>开户行</span><input type="text" id="bank" class="form-control" placeholder="开户行,例如:中国农业银行" ></li>
+           <li class="list-group-item"><span>银行卡号</span><input type="number" id="bankCard" class="form-control" placeholder="银行卡号" ></li>
+           <li class="list-group-item"><span>手机号</span><input type="number" id="iphone" class="form-control" placeholder="手机号"></li>
+       </ul>
+        <div class="footer">
+            <input class="btn btn-default" type="submit" value="提交">
+        </div>
+    </div>
+</div>
+</body>
+</html>

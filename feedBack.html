@@ -1,0 +1,71 @@
+<!--意见反馈-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意见反馈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="idea_box">
+    <div class="infHead">
+        <div class="ingBack">
+            <a href="setting.html">
+                <img src="images/iBack_03.png"/>
+            </a>
+        </div>
+        <div class="infTitle"><span>意见反馈</span></div>
+    </div>
+    <div class="container">
+        <div class="character">
+            <textarea id="tex" placeholder="请输入反馈文字.."></textarea>
+            <div><span><a id="maxNumber">0</a>/200</span></div>
+        </div>
+
+        <div class="footer">
+            <input class="btn btn-default" type="submit" value="提交反馈">
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        // 获取值的长度
+        $("#tex").on("keyup", function () {
+            $('#maxNumber').text($('#tex').val().length);//这句是在键盘按下时，实时的显示字数
+            if ($('#tex').val().length > 200) {
+                $('#maxNumber').text(200);//长度大于200时0处显示的也只是200
+                $('#tex').val($('#tex').val().substring(0, 200));//长度大于100时截取钱100个字符
+            }
+
+        });
+        $('#maxNumber').text($('#tex').val().length);//这句是在刷新的时候仍然显示字数
+    })
+</script>
+</body>
+</html>

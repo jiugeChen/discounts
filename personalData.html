@@ -1,0 +1,146 @@
+<!--个人资料-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .hint {
+            text-align: center;
+            font-size: 0.14rem;
+            color: red;
+            margin-top: 0.1rem;
+
+            visibility: hidden;
+
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    $(window).load(function(){
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="informationBox">
+    <div class="infHead">
+        <div class="ingBack">
+            <a href="personalCenter.html">
+                <img src="images/iBack_03.png"/>
+            </a>
+        </div>
+        <div class="infTitle"><span>个人资料</span></div>
+    </div>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item"><span>昵称</span>
+                <input type="text" id="userName" class="form-control" placeholder="输入昵称2-16个字符"></li>
+            <li class="list-group-item"><span>性别</span>
+                <select id="select" >
+                    <option value="0">请选择</option>
+                    <option value="1">男</option>
+                    <option value="2">女</option>
+
+                </select>
+            </li>
+            <!--<li class="list-group-item"><span>个性签名</span><input type="text" id="signature" class="form-control" placeholder="个性签名"></li>-->
+        </ul>
+        <div class="hint">昵称不符合条件</div>
+
+        <div class="footer">
+
+            <input class="btn btn-default" id="save" type="submit" value="提交">
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#save").on("click", function () {
+            // 获取#userName的value
+            let nameVal = $("#userName").val();
+            let $hint=$(".hint");
+            //定义匿名函数自调用
+            (function () {
+                // 判断输入的昵称的value值的长度
+                if (nameVal.length > 1 && nameVal.length <= 16) {
+                    // 隐藏提示
+                    $(".hint").css({"visibility": "hidden"});
+                    //定义匿名函数自调用
+                    (function () {
+                        // 获取select
+                        let select = document.getElementById("select");
+                        // 设置index为select的选中项
+                        let index = select.selectedIndex;
+                        // 如果为0显示出提示
+                        if (index == 0) {
+                            // 提示并改变提示里面的值
+                            $hint.html("请选择性别");
+                            // 显示提示
+                            $hint.css({"visibility": "visible"});
+
+                            //删除disabled属性
+                            $("#select").removeAttr(disabled);
+                        }{
+                            $("#select").attr("disabled",true);
+                        }
+                    }());
+
+                } else {
+
+                    $hint.html("昵称不符合条件");
+                    $hint.css({"visibility": "visible"});
+                }
+            }());
+
+        });
+        // 获取焦点是 提示信息隐藏
+        $("#userName,#select").on("focus", function () {
+            $(".hint").css({"visibility": "hidden"});
+        })
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

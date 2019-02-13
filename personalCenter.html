@@ -1,0 +1,75 @@
+<!--个人中心-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".loading").addClass("loader-chanage");
+        $(".loading").fadeOut(300)
+    })
+</script>
+<body>
+<div class="loading">
+    <div class="loader">
+        <div class="loader-inner pacman">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="containerBox">
+    <!--<div class="header text-center">-->
+    <!--<p>我的</p>-->
+    <!--</div>-->
+    <div class="container ">
+        <div class="headPortraitBox">
+            <div class="headBgBox"></div>
+            <div class="headPortraitImg"></div>
+        </div>
+        <div class="personalData">
+            <p>15223578888</p>
+            <div class="integral ">
+                <ul>
+                    <li><a href="#">积分:147</a></li>
+                    <li><a href="#">积分提现</a></li>
+                </ul>
+            </div>
+            <div class=" text-center "><span>小南挑实惠用更少的钱买更多的东西 </span></div>
+        </div>
+        <div class="myList list-group ">
+            <a href="personalData.html" class="list-group-item ">登录</a>
+            <a href="personalData.html" class="list-group-item ">注册</a>
+            <a href="personalData.html" class="list-group-item ">个人资料</a>
+            <a href="accountManagement.html" class="list-group-item">账号管理</a>
+            <a href="pointManagement.html" class="list-group-item">积分管理</a>
+            <a href="AddReferrer.html" class="list-group-item">推荐人</a>
+            <a href="setting.html" class="list-group-item">设置</a>
+        </div>
+    </div>
+    <div class="footer_box">
+        <ul>
+            <li><a href="index.html">  首页</a></li>
+            <li><a href="assort.html">  分类</a></li>
+            <li><a href="activity.html">活动</a></li>
+            <li><a href="personalCenter.html" style="color: #fc5459;">我的</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
